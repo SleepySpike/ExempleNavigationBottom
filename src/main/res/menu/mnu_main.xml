@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_compte"
+        android:title="Mon compte" />
+    <item
+        android:id="@+id/action_quitter"
+        android:title="Quitter" />
+    <item
+        android:id="@+id/action_sorties"
+        android:title="Sorties" />
+</menu>

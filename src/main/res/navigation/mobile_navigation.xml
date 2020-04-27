@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.exemplenavigationbottom.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_sorties"
+            app:destination="@id/navigation_sorties" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.exemplenavigationbottom.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_notifications"
+            app:destination="@id/navigation_notifications" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.exemplenavigationbottom.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_compte"
+        android:name="com.example.exemplenavigationbottom.ui.Compte.CompteFragment"
+        android:label="fragment_compte"
+        tools:layout="@layout/fragment_compte" />
+    <fragment
+        android:id="@+id/navigation_sorties"
+        android:name="com.example.exemplenavigationbottom.ui.Sorties.SortiesFragment"
+        android:label="fragment_sorties"
+        tools:layout="@layout/fragment_sorties" />
+    <fragment
+        android:id="@+id/navigation_adherents"
+        android:name="com.example.exemplenavigationbottom.ui.Adherents.AdherentsFragment"
+        android:label="fragment_adherents"
+        tools:layout="@layout/fragment_adherents" />
+</navigation>
